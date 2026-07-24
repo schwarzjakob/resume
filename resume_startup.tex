@@ -1,0 +1,185 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Jakob Schwarz}}\\
+	\href{tel:+4915168434614}{+49 151 68 43 46 14} | \href{mailto:jakob.schwarz@lmu.de}{jakob.schwarz@lmu.de} %| \href{https://github.com/schwarzjakob}{github.com/schwarzjakob}\\
+\end{center}
+
+%==== Professional Summary ====%
+\header{Professional Summary}
+
+Entrepreneurially minded researcher with a strong record of evidence-based problem solving in high-growth startups.   At Finanzguru (fintech), simpleclub (ed-tech), and dreifach.ai (AI services) I designed and tested data-driven workflows that cut payment cycles in half, generated €30 k in new revenue within three months, and booked 100+ qualified B2B appointments monthly.  My academic grounding in management \& digital technologies is backed by peer-reviewed output (ECIS 2024 conference paper).  I thrive at the intersection of research and venture creation—turning creative ideas into valuable impact. \\
+
+\vspace{2mm}
+
+%==== Professional Experience ====%
+\header{Professional Experience}
+\textbf{dreifach.ai | Product Manager - AI Training} \hfill \textbf{ Mar 2025 - Present}\\
+\textit{Business Development, Microsoft Copilot Studio, Microsoft Power Automate, AI Education}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Co-developed a new AI education business model with the CEO, targeting insurance brokers to build Microsoft Copilot Studio agents for internal process automation.
+    \item Generated over €30k in revenue within 3 months by converting webinar interest into multiple workshops and two 6-month apprenticeship programs.
+\end{itemize}
+\vspace{-1mm}
+\textbf{Schwarz Digital Solutions | Product Owner (Freelance)} \hfill \textbf{ Oct 2024 - Feb 2025}\\
+\textit{Python, JavaScript, TypeScript, SQL, HTML, CSS, GitHub, Git}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Co-led the implementation of Project SouthPark for Messe München to optimize decision-making for parking space management.
+\end{itemize}
+\vspace{-1mm}
+\textbf{simpleclub (Edtech Startup) | Business Analyst} \hfill \textbf{ May 2023 - Feb 2024}\\
+\textit{HubSpot (super admin), Sheets, SQL}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Implemented workflows and dashboards in HubSpot for the VP Finance, improving process automation and financial forecasting and accounts receivable management, reducing payment cycles by 50\%.
+\end{itemize}
+\vspace{-1mm}
+\textbf{Finanzguru (Fintech Startup) | Sales Development Representative} \hfill \textbf{ Nov 2022 - April 2023}\\
+\textit{HubSpot (super admin), Sheets, SQL}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Conducted hundreds of outbound calls weekly, consistently booking over 100 qualified appointments per month with insurance brokers.
+\end{itemize}
+\vspace{-2mm}
+\textbf{Various Student Roles} \hfill \textbf{ Apr 2017 - Nov 2022}\\
+% Skills line intentionally left empty to maintain consistency
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Gained diverse experience across customer support at Relaix Networks, sales at Allaoui Graphic Machinery, research assistance at FH Aachen, tutoring in math and physics, logistics at Aldi Süd, and vendoring at Oecher Eistreff and Glühweintreff.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{LMU Munich, MSc Management and Digital Technologies (GPA: 3.2)}\hfill \textbf{ Oct 2023 - Present}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Co-developed a full-stack application dubbed Project SouthPark for Messe München to manage parking during high-traffic events. This project used data visualization to support decision-making in parking space management, integrating Python, PostgreSQL, and JavaScript (React.js).
+\end{itemize}
+\vspace{-2mm}
+\textbf{University of Zurich, SEMP Exchange}\hfill \textbf{ Sep 2024 - Jan 2025}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Co-developed an LLM-based experiment simulation to explore design spaces of research questions. 
+	\item Focus on deepening technical expertise and bridging the gap between business and technology. Courses include prototyping, data science, and finance.
+\end{itemize}
+\vspace{-2mm}
+\textbf{Aachen University of Applied Sciences, BSc Business Studies (GPA: 3.1)}\hfill \textbf{ Mar 2019 - Aug 2023}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item \href {https://aisel.aisnet.org/ecis2024/track24_socialmedia/track24_socialmedia/6/}  {ECIS24 Conference Paper: What do ECS afford to digital startups?}
+	\item Focus on business informatics
+\end{itemize}
+\vspace{-2mm}
+\textbf{Ozyegin University, Erasmus (GPA: 4.0)}\hfill \textbf{ Feb 2022 - Jun 2022}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Achieved top 1\% of over 1500 students in the Technology and Innovation Management course. Led a project to extend a medical platform, demonstrating strong prototyping skills. The final plan is used as an example for future students.
+	\item Focus on strategy, technology, and innovation management
+\end{itemize}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	\textbf{Technical Skills:} & Python, PostgreSQL, Git, GitHub, JavaScript, TypeScript, React.js, REST APIs, \\
+	\textbf{} & Prototyping, Data Analysis, Machine Learning, User-Centered Design \\
+    \textbf{Business Skills:} & Business Analytics, CRM (HubSpot, Salesforce), Critical Thinking, Creative Thinking \\
+\end{tabular}
+\vspace{1mm}
+
+%==== Certificates ====%
+\header{Certificates \& Achievements}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item \href{https://www.datacamp.com/certificate/DEA0019349892331}{Associate Data Engineer by Datacamp}
+	\item \href{https://coursera.org/share/77f44f712619905a07ce551f806c10e4}{Google Data Analytics Professional Certificate}
+	\item \href{https://createyourowncareer.de/studenten/talent-meets-bertelsmann}{Talent Meets Bertelsmann Alumni}
+\end{itemize}
+\vspace{2mm}
+
+
+\ 
+\end{document}

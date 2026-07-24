@@ -1,0 +1,117 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.2} % Adjust the value as needed
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Jakob Schwarz}}\\
+	\href{tel:+4915168434614}{+49 151 68 43 46 14} | \href{mailto:jakob.schwarz97@gmail.de}{jakob.schwarz97@gmail.de} %| \href{https://github.com/schwarzjakob}{github.com/schwarzjakob}\\
+\end{center}
+
+%==== Professional Summary ====%
+\header{Cover Letter}
+\vspace{2mm}
+
+Dear Daniel, \\ [1em]
+
+this role hits exactly what I’ve been looking for. \\ [1em]
+
+I want to dedicate myself to building B2B SaaS products that solve real problems. What fascinates me about Weflow is the mission to eliminate the chaos of revenue operations and giving their teams transparency and predictability to focus on value adding core activities. That’s a problem worth solving. Furthermore, I resonate deeply with your values and I want to be part of fostering this culture. \\ [1em]
+
+I’m a generalist with strong analytical skills and a bias for action. At Messe München, I turned user feedback into working prototypes used by decision-makers in rapid speed. At simpleclub, I built RevOps reporting in HubSpot from scratch, owned invoicing, and cut payment cycles by 50\%. I’ve worked on business development for AI education, built automations with low-code applications like Microsoft Copilot Studio and know how to turn unstructured inputs into structured, reliable workflows. My focus is always the same: Build something useful that solves a problem, and don't just blame the status quo. \\ [1em]
+
+This founder associate role is the perfect fit because I want to go deep into go-to-market: understanding customers, shaping positioning, and driving pipeline with smart, hands-on solutions. I learn fast, I experiment, I fail and adapt quickly. I am always one who takes over leadership in proactivity. I learned that working in an ice-cream shop, in group projects at University, where the risk of endless discussions kill execution, and in various work projects, where I combined storytelling with tangible results. \\ [1em]
+
+Weflow is the right place to learn and contribute to that journey, and I am convinced I will add real value from day one. \\ [1em]
+
+Very much looking forward to getting in touch. Hope you have a great day! \\ [1em]
+
+Best, \\ [1em]
+Jakob Schwarz
+
+
+\vspace{2mm}
+
+
+\ 
+\end{document}

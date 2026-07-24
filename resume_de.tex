@@ -1,0 +1,183 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Jakob Schwarz}}\\
+	+49 151 68434614 | \href{mailto:jakob.schwarz97@gmail.com}{jakob.schwarz97@gmail.com} %| \href{https://github.com/schwarzjakob}{github.com/schwarzjakob}\\
+\end{center}
+
+%==== Professional Summary ====%
+\header{Professional Summary}
+
+Vielseitiger Softwareentwickler mit einem Schwerpunkt auf TypeScript und modernen Backend-Technologien. Erfahrung in der Entwicklung datengetriebener Lösungen, z. B. durch die Mitentwicklung von Project SouthPark f\"ur Messe M\"unchen, das Python, PostgreSQL und JavaScript nutzt, um Entscheidungsprozesse zu optimieren. Vertraut mit Cloud-Architekturen, CI/CD-Pipelines und Large Language Modellen. Praktische Kenntnisse in der Entwicklung von APIs und der Arbeit mit datenbankgest\"utzten Systemen. Bereit, Verantwortung zu \"ubernhmen und innovative KI-L\"osungen f\"ur die Automatisierung von morgen zu schaffen.
+
+\vspace{1mm}
+
+%==== Professional Experience ====%
+\header{Professional Experience}
+\textbf{Schwarz Digital Solutions | Full Stack Developer (Freelance)} \hfill \textbf{ Okt 2024 - Heute}\\
+\textit{Python, JavaScript, TypeScript, SQL, HTML, CSS, GitHub, Git}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Mitentwicklung von Project SouthPark f\"ur Messe M\"unchen zur Optimierung des Parkplatzmanagements durch datenbasierte Entscheidungsprozesse.
+    \item Fehlerbehebung im Frontend und Backend in der Anfangsphase des Projekts, um erfolgreiche Benutzertests zu gew\"ahrleisten.
+\end{itemize}
+\vspace{-1mm}
+\textbf{Liberta Partners (Private Equity) | Business Analyst (Teilzeit)} \hfill \textbf{ Okt 2024 - Heute}\\
+\textit{PowerBI, SQL, Salesforce}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Gestaltung von bereichs\"ubergreifenden Dashboards zur Analyse der KPI-Performance von Portfoliounternehmen.
+\end{itemize}
+\vspace{-1mm}
+\textbf{5V Strategy | Data Scientist (Freelance)} \hfill \textbf{ M\"arz 2024 - April 2024}\\
+\textit{Python, Jupyter Notebook, Git, GitHub, Visual Studio Code}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Verbesserung der Kundenbindungsstrategien durch Transformation von Daten und Feature Engineering zur Vorhersage von Kundenabwanderungen.
+\end{itemize}
+\vspace{-1mm}
+\textbf{simpleclub (Edtech Startup) | Business Analyst (Teilzeit)} \hfill \textbf{ Mai 2023 - Feb 2024}\\
+\textit{HubSpot (Superadmin), Tabellen, SQL}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Implementierung von Workflows und Dashboards in HubSpot zur Verbesserung der Prozessautomatisierung und Finanzprognose.
+	\item Verk\"urzung der Zahlungslaufzeiten um 50\% durch Optimierung des Forderungsmanagements.
+\end{itemize}
+\vspace{-2mm}
+\textbf{Verschiedene studentische T\"atigkeiten} \hfill \textbf{ Apr 2017 - Apr 2023}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Vielf\"altige Erfahrungen in Kundenservice, Vertrieb, Forschung, Nachhilfe und Logistik.
+\end{itemize}
+\vspace{-1mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{LMU M\"unchen, MSc Management and Digital Technologies (Note: 3,4)}\hfill \textbf{ Okt 2023 - Heute}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Co-Entwicklung der Full-Stack-Anwendung Project SouthPark zur Parkplatzverwaltung bei Großveranstaltungen. Einsatz von Python, PostgreSQL und JavaScript (React.js).
+    \item Forschungsposition am Institut f\"ur Digitales Management und Neue Medien (Jun 2024 - Sep 2024).
+\end{itemize}
+\vspace{-2mm}
+\textbf{Universit\"at Z\"urich, SEMP Austauschprogramm}\hfill \textbf{ Sep 2024 - Heute}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Vertiefung technischer Kenntnisse in Prototyping und Data Science.
+\end{itemize}
+\vspace{-2mm}
+\textbf{FH Aachen, BSc Wirtschaft (Note: 3,4)}\hfill \textbf{ M\"arz 2019 - Aug 2023}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item \href {https://aisel.aisnet.org/ecis2024/track24_socialmedia/track24_socialmedia/6/}  {ECIS24 Konferenzpapier: What do ECS afford to digital startups?}
+\end{itemize}
+\vspace{-2mm}
+\textbf{Ozyegin Universit\"at, Erasmus (Note: 1,0)}\hfill \textbf{ Feb 2022 - Jun 2022}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Top 1\% im Kurs "Technologie- und Innovationsmanagement". Leitung eines Projekts zur Erweiterung einer medizinischen Plattform.
+\end{itemize}
+
+\vspace{-1mm}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	\textbf{Technische Kenntnisse:} & Python, TypeScript, PostgreSQL, Git, React.js, Express.js, \\ 
+    \textbf{} & Datenbankverwaltung, RESTful APIs, CI/CD-Pipelines, LLMs \\
+    \textbf{Weitere Kenntnisse:} & Projektmanagement, CRM (HubSpot, Salesforce), Prototyping, Datenanalyse\\
+\end{tabular}
+\vspace{1mm}
+
+%==== Certificates ====%
+\header{Zertifikate \& Auszeichnungen}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item \href{https://coursera.org/share/77f44f712619905a07ce551f806c10e4}{Google Data Analytics Professional Certificate}
+	\item \href{https://createyourowncareer.de/studenten/talent-meets-bertelsmann}{Talent Meets Bertelsmann Alumni}
+\end{itemize}
+\vspace{2mm}
+
+\
+\end{document}

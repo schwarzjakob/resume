@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.7in,top=0.7in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+    \begin{document}
+\vspace*{-40pt}
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Jakob Schwarz}}\\
+	\href{tel:+4915168434614}{+49 151 68 43 46 14} $\mid$ \href{mailto:jakob.schwarz@lmu.de}{jakob.schwarz@lmu.de}
+\end{center}
+
+%==== Professional Summary ====%
+\header{Professional Summary}
+
+Research-driven product generalist with 3+ years bridging data engineering, rapid prototyping, and go-to-market execution across fintech, ed-tech, AI, and medtech. Currently a Founders Associate at GAM Medical, where I built a full CRM system and a multi-source data pipeline for management reporting within weeks. I approach complex, ambiguous problems with analytical rigor and a bias for execution—skills directly transferable to rigorous thesis research. My M.Sc. in Management \& Digital Technologies, peer-reviewed conference publication, and hands-on work at the intersection of technology and business give me both the theoretical foundation and the practical curiosity to produce impactful, original research.\\
+
+\vspace{1mm}
+
+%==== Professional Experience ====%
+\header{Professional Experience}
+\textbf{GAM Medical DACH | Founders Associate} \hfill \textbf{Nov 2025 -- Present}\\
+\textit{Airtable, Softr, Make, Supabase, Powermetrics, Figma, Notion, ClickUp, Rapid Prototyping}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Built a full CRM application for 20 users using Softr (frontend), Make (backend automation), and Airtable (database) within 2 weeks.
+    \item Engineered a multi-source management sales reporting pipeline integrating Zeeg, Notion, and Airtable via Make into Supabase as a data warehouse, visualized in Powermetrics dashboards.
+\end{itemize}
+\vspace{-1mm}
+\textbf{dreifach.ai | Product Manager -- AI Training} \hfill \textbf{Mar 2025 -- Oct 2025}\\
+\textit{Business Development, Microsoft Copilot Studio, Microsoft Power Automate, AI Education}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Co-developed a new AI education business model; generated over \euro30k in revenue within 3 months through workshops and 6-month apprenticeship programs for insurance brokers.
+\end{itemize}
+\vspace{-1mm}
+\textbf{Schwarz Digital Solutions | Product Manager (Freelance)} \hfill \textbf{Oct 2024 -- Feb 2025}\\
+\textit{Python, JavaScript, TypeScript, SQL, React.js, PostgreSQL, GitHub}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Co-led Project SouthPark for Messe München: a full-stack decision-support app for real-time parking space management during high-traffic events.
+\end{itemize}
+\vspace{-1mm}
+\textbf{simpleclub (Edtech Startup) | Business Analyst} \hfill \textbf{May 2023 -- Feb 2024}\\
+\textit{HubSpot (super admin), SQL, Google Sheets}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Redesigned HubSpot workflows and dashboards for the VP Finance, reducing payment cycles by 50\% through improved process automation and accounts receivable management.
+\end{itemize}
+\vspace{-1mm}
+\textbf{Finanzguru (Fintech Startup) | Sales Development Representative} \hfill \textbf{Nov 2022 -- Apr 2023}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item Consistently booked 100+ qualified appointments per month with insurance brokers via high-volume outbound calling.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{LMU Munich, MSc Management and Digital Technologies (GPA: 3.2)}\hfill \textbf{Oct 2023 -- Present}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item Co-developed Project SouthPark (full-stack, Python/PostgreSQL/React.js) for Messe München; co-developed an LLM-based experiment simulation at University of Zurich (SEMP Exchange, Sep--Jan 2025).
+\end{itemize}
+\vspace{-2mm}
+\textbf{Aachen University of Applied Sciences, BSc Business Studies (GPA: 3.1)}\hfill \textbf{Mar 2019 -- Aug 2023}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+	\item \href{https://aisel.aisnet.org/ecis2024/track24_socialmedia/track24_socialmedia/6/}{ECIS 2024 Conference Paper: \textit{What do ECS afford to digital startups?}} --- peer-reviewed publication.
+	\item Erasmus at Ozyegin University (top 1\% of 1500+ students in Technology \& Innovation Management).
+\end{itemize}
+\vspace{1mm}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	\textbf{Technical:} & Python, SQL, PostgreSQL, Supabase, Airtable, Make, Softr, React.js, JavaScript, \\
+	 & TypeScript, REST APIs, Git/GitHub, Data Engineering, Rapid Prototyping, Figma \\
+    \textbf{Business:} & Strategy, Product Management, Business Development, HubSpot, Sales Operations \\
+\end{tabular}
+\vspace{1mm}
+
+%==== Certificates ====%
+\header{Certificates \& Achievements}
+\vspace{-2mm}
+\begin{itemize} \itemsep -2pt
+    \item \href{https://www.datacamp.com/certificate/DEA0019349892331}{Associate Data Engineer -- Datacamp} \quad $\mid$ \quad \href{https://coursera.org/share/77f44f712619905a07ce551f806c10e4}{Google Data Analytics Professional Certificate}
+    \item \href{https://createyourowncareer.de/studenten/talent-meets-bertelsmann}{Talent Meets Bertelsmann Alumni}
+\end{itemize}
+
+\end{document}
